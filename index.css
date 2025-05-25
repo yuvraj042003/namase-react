@@ -4,6 +4,7 @@
     justify-content: space-between;
     border: 1px solid black;
     background: #ffffff;
+    
 }
 .logo {
     width: 100px;
@@ -14,15 +15,28 @@
     list-style-type: none;
     margin-right: 30px;
     font-size: 20px;
+    cursor: pointer;
+
+}
+.nav-items > ul> li:hover {
+    color: orangered;
 
 }
 .nav-items > ul > li {
     padding: 15px;
     margin: 5px;
 }
+/* BODY CSS Start */
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+
+}
 .res-card {
     width: 250px;
-    height: 380px;
+    height: 410px;
     border: none;
     background-color: whitesmoke;
     border-radius: 5%;
@@ -50,4 +64,100 @@
     margin-bottom: 2px;
     margin-left: 5px;
     color: rgba(2, 6, 12, 0.6)
+}
+.search-box {
+   width: 660px;
+   display: flex; 
+   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #fffdfd;
+  padding: 0px 10px;
+   border-radius: 10px;
+  font-size: 1.2rem;
+  background: white;
+  height: 48px;
+}
+.search-box > input {
+  height: 40px;
+  padding: 0px 10px;
+  outline: none;
+  border: none;
+  background-color: white;
+  width: 93%;
+  font-size: 1.2rem;
+  border: 1px solid gray;
+  color: rgb(31, 30, 30);
+}
+
+.search-icon {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  color: #828080;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 1px solid gray;
+}
+/* Suggestions */
+.suggestions {
+  list-style: none;
+  background: #fff;
+  border: 1px solid #ddd;
+  width: 52%;
+  margin-top: 48px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 0;
+  z-index: 999;
+  position: absolute;
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0;
+}
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-left: 8%;
+}
+
+.footer > .footer-head > ul {
+    display: flex;
+    list-style-type: none;
+    gap: 220px; 
+    color: #02060c;
+    font-size: large;
+}
+.footer-head > ul > li {
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  list-style: none;
+}
+.footer-head > ul > li > ul {
+  margin-top: 10px;
+  padding-left: 0;
+  list-style: none;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.footer-head > ul > li > ul > li {
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+.footer-head > ul > li > ul > li:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
